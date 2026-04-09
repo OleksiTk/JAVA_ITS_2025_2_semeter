@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="com.example.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table_sites" prefHeight="598.0" prefWidth="385.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="75.0" text="Назва" />
+          <TableColumn fx:id="col_lat" prefWidth="75.0" text="Широта" />
+          <TableColumn fx:id="col_lon" prefWidth="75.0" text="Довгота" />
+          <TableColumn fx:id="col_region" prefWidth="75.0" text="Регіон" />
+        </columns>
+      </TableView>
+      <Label layoutX="456.0" layoutY="34.0" text="ID" />
+      <TextField fx:id="txt_id" layoutX="395.0" layoutY="60.0" />
+      <Label layoutX="648.0" layoutY="34.0" text="Назва" />
+      <TextField fx:id="txt_name" layoutX="596.0" layoutY="60.0" />
+      <Label layoutX="446.0" layoutY="136.0" text="Широта" />
+      <Label layoutX="654.0" layoutY="136.0" text="Довгота" />
+      <Label layoutX="563.0" layoutY="224.0" text="Регіон" />
+      <TextField fx:id="txt_lat" layoutX="395.0" layoutY="169.0" />
+      <TextField fx:id="txt_lon" layoutX="596.0" layoutY="169.0" />
+      <TextField fx:id="txt_region" layoutX="505.0" layoutY="256.0" />
+      <Button fx:id="btn_insert" layoutX="408.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleInsert" text="Insert" />
+      <Button fx:id="btn_clear" layoutX="544.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleClear" text="Clear" />
+      <Button fx:id="btn_update" layoutX="479.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+      <Button fx:id="btn_delete" layoutX="613.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+   </children>
+</AnchorPane>
